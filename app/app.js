@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.general-map',
   'myApp.table',
+  'myApp.load',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
