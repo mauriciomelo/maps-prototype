@@ -94,7 +94,28 @@ angular.module('myApp.general-map', ['ngRoute'])
       zoom: 5,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
+	
+	var legendStyles = [
+		{
+			desc: 'Hub',
+			icon: '/images/hub.png'
+		},
+		{
+			desc: 'Filial',
+			icon: '/images/filial.png'
+		}
+	];
+	
+	var legend = document.getElementById('legend');
+	for (var i=0; i < legendStyles.length; i++) {
+	  var description = legendStyles[i].desc;
+	  var icon = legendStyles[i].icon;
+	  var div = document.createElement('div');
+	  div.innerHTML = '<img width=30 height=30 src="' + icon + '"> ' + description;
+	  legend.appendChild(div);
+	}
+	
+	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
 
     directionsDisplay.setMap(map);
 

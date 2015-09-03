@@ -102,6 +102,37 @@ angular.module('myApp.load', ['ngRoute'])
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
+	var legendStyles = [
+		{
+			desc: 'Hub',
+			icon: '/images/hub.png'
+		},
+		{
+			desc: 'Filial',
+			icon: '/images/filial.png'
+		},
+		{
+			desc: 'Posição Atual',
+			icon: 'https://maps.google.com/mapfiles/kml/shapes/truck.png'
+		},
+		{
+			desc: 'Ocorrência',
+			icon: 'https://maps.google.com/mapfiles/kml/shapes/caution.png'
+		}
+		
+	];
+	
+	var legend = document.getElementById('legend');
+	for (var i=0; i < legendStyles.length; i++) {
+	  var description = legendStyles[i].desc;
+	  var icon = legendStyles[i].icon;
+	  var div = document.createElement('div');
+	  div.innerHTML = '<img width=30 height=30 src="' + icon + '"> ' + description;
+	  legend.appendChild(div);
+	}
+	
+	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+
     calcRoute([hubs.rec, hubs.curitiba]);
 
     directionsDisplay.setMap(map);
