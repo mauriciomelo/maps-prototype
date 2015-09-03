@@ -51,8 +51,15 @@ td, h2, tr {
 	color: #666;
 }
 
-body {
+body- {
 	background-color: #ebeaeb;
 }
 
+p {
+	margin: 0;
+}
 
+h3 {
+	font-weight: 300;
+	color: #4d148c;
+}
