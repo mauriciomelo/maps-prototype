@@ -14,6 +14,8 @@ angular.module('myApp.load', ['ngRoute'])
   var markers = [];
   var hubIcon;
   var affiliateIcon;
+  var truckIcon;
+  var alertIcon;
   var lines = [];
   var directionsDisplay;
   var directionsService;
@@ -83,6 +85,17 @@ angular.module('myApp.load', ['ngRoute'])
       strokeWeight: 2
     };
 
+    truckIcon = {
+      url: 'https://maps.google.com/mapfiles/kml/shapes/truck.png',
+      scaledSize: new google.maps.Size(30, 30),
+    };
+
+    alertIcon = {
+      url: 'https://maps.google.com/mapfiles/kml/shapes/caution.png',
+      scaledSize: new google.maps.Size(30, 30),
+    }
+
+
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -15.049136, lng: -51.414036},
       zoom: 5,
@@ -109,6 +122,20 @@ angular.module('myApp.load', ['ngRoute'])
         icon: affiliateIcon,
         title: index
       });
+    });
+
+    var truckMarker = new google.maps.Marker({
+      position: {lat: -14.668394, lng: -40.467333},
+      icon: truckIcon,
+      map: map,
+      title: 'Posição atual'
+    });
+
+    var alertMarker = new google.maps.Marker({
+      position: {lat: -12.448264, lng: -39.246030},
+      icon: alertIcon,
+      map: map,
+      title: 'Posição atual'
     });
   }
 

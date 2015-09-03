@@ -35,6 +35,9 @@
 
 }
 
+.events {
+  padding: 0;
+}
 .events li{
   list-style: none;
 
