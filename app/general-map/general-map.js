@@ -85,7 +85,7 @@ angular.module('myApp.general-map', ['ngRoute'])
       fillColor: 'white',
       fillOpacity: 1,
       scale: 4.5,
-      strokeColor: '#ff9e36',
+      strokeColor: '#ff6600',
       strokeWeight: 2
     };
 
