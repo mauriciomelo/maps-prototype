@@ -47,6 +47,7 @@ a {
 	color: #4d148c;
 }
 
-
-
+td, h2, tr {
+	color: #666;
+}
 
