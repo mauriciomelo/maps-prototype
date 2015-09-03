@@ -69,19 +69,19 @@ angular.module('myApp.load', ['ngRoute'])
 
     affiliateIcon = {
       path: google.maps.SymbolPath.CIRCLE,
-      fillColor: 'black',
-      fillOpacity: .7,
+      fillColor: '#4d148c',
+      fillOpacity: 1,
       scale: 4.5,
-      strokeColor: 'white',
+      strokeColor: '#4d148c',
       strokeWeight: 1
     };
 
     hubIcon = {
       path: google.maps.SymbolPath.CIRCLE,
       fillColor: 'white',
-      fillOpacity: .7,
+      fillOpacity: 1,
       scale: 4.5,
-      strokeColor: 'black',
+      strokeColor: '#ff6600',
       strokeWeight: 2
     };
 
