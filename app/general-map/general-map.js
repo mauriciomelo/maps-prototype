@@ -73,10 +73,10 @@ angular.module('myApp.general-map', ['ngRoute'])
 
     affiliateIcon = {
       path: google.maps.SymbolPath.CIRCLE,
-      fillColor: 'black',
+      fillColor: '#4d148c',
       fillOpacity: .7,
       scale: 4.5,
-      strokeColor: 'white',
+      strokeColor: '#4d148c',
       strokeWeight: 1
     };
 
