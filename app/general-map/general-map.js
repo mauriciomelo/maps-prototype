@@ -74,7 +74,7 @@ angular.module('myApp.general-map', ['ngRoute'])
     affiliateIcon = {
       path: google.maps.SymbolPath.CIRCLE,
       fillColor: '#4d148c',
-      fillOpacity: .7,
+      fillOpacity: 1,
       scale: 4.5,
       strokeColor: '#4d148c',
       strokeWeight: 1
@@ -83,9 +83,9 @@ angular.module('myApp.general-map', ['ngRoute'])
     hubIcon = {
       path: google.maps.SymbolPath.CIRCLE,
       fillColor: 'white',
-      fillOpacity: .7,
+      fillOpacity: 1,
       scale: 4.5,
-      strokeColor: 'black',
+      strokeColor: '#ff9e36',
       strokeWeight: 2
     };
 
