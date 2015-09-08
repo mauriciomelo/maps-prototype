@@ -105,11 +105,11 @@ angular.module('myApp.load', ['ngRoute'])
 	var legendStyles = [
 		{
 			desc: 'Hub',
-			icon: '/images/hub.png'
+			icon: 'images/hub.png'
 		},
 		{
 			desc: 'Filial',
-			icon: '/images/filial.png'
+			icon: 'images/filial.png'
 		},
 		{
 			desc: 'Posição Atual',
